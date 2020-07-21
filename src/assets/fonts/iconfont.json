@@ -1,0 +1,219 @@
+{
+  "id": "1756103",
+  "name": "中国船柴统一门户",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "62445",
+      "name": "导航",
+      "font_class": "daohang",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "766574",
+      "name": "流程",
+      "font_class": "bk-flow",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "3404135",
+      "name": "新闻 ",
+      "font_class": "xinwen2",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "76023",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "13528279",
+      "name": "研发",
+      "font_class": "yanfa",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "14236052",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "1990145",
+      "name": "生产-2",
+      "font_class": "shengchan-",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "3006909",
+      "name": "96待办事宜",
+      "font_class": "daibanshiyi",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "3182820",
+      "name": "虚拟桌面（应用）管理",
+      "font_class": "xunizhuomianyingyongguanli",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "4678841",
+      "name": "文件",
+      "font_class": "wenjian",
+      "unicode": "ea54",
+      "unicode_decimal": 59988
+    },
+    {
+      "icon_id": "7957912",
+      "name": "企业",
+      "font_class": "tongyonghangkongzuoyeguanlixitongICON-",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "8005721",
+      "name": "管理",
+      "font_class": "guanli1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "10828807",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "13422002",
+      "name": "党建",
+      "font_class": "dangjian",
+      "unicode": "e73c",
+      "unicode_decimal": 59196
+    },
+    {
+      "icon_id": "844283",
+      "name": "邮件",
+      "font_class": "youjian",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "1899353",
+      "name": "管理",
+      "font_class": "guanli",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "3521620",
+      "name": "财务",
+      "font_class": "caiwu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "4400555",
+      "name": "合同",
+      "font_class": "hetong",
+      "unicode": "e81f",
+      "unicode_decimal": 59423
+    },
+    {
+      "icon_id": "4484059",
+      "name": "流程中心",
+      "font_class": "liuchengzhongxin",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "6825060",
+      "name": "新闻",
+      "font_class": "xinwen1",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "8216148",
+      "name": "ERP系统",
+      "font_class": "ERPxitong",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "11959308",
+      "name": "OA",
+      "font_class": "OA",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "627389",
+      "name": "全部",
+      "font_class": "quanbu",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "1940608",
+      "name": "通讯录",
+      "font_class": "tongxunlu",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "2718103",
+      "name": "文档",
+      "font_class": "wendang",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "5898047",
+      "name": "首页",
+      "font_class": "tubiaozhizuomoban-",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "6840795",
+      "name": "地图",
+      "font_class": "ditu",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "9210547",
+      "name": "新闻",
+      "font_class": "xinwen",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "12283674",
+      "name": "会议管理",
+      "font_class": "huiyishi",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "12641673",
+      "name": "流程",
+      "font_class": "liucheng",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    }
+  ]
+}

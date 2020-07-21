@@ -1,0 +1,179 @@
+$bor: 1px solid rgba(24, 99, 181, 1);
+$bor1: 1px solid rgba(97, 192, 191, 1);
+$bor2: 1px solid rgba(255, 170, 165, 1);
+$bor3: 1px solid rgba(255, 210, 70, 1);
+$bor4: 1px solid rgba(255, 255, 255, 0.5);
+
+$bg: rgba(112, 161, 215, 0.7);
+$bg1: rgba(30, 172, 167, 0.5);
+$bg2: rgba(255, 170, 165, 0.6);
+$bg3: rgba(255, 210, 70, 0.7);
+
+$h: 30px;
+.main-content {
+  min-height: calc(100vh - 168px);
+  // background: #fff;
+  // padding-top: 20px;
+  position: relative;
+}
+
+.ma {
+  flex-direction: column;
+  display: flex;
+  box-sizing: border-box;
+  flex-grow: 1000;
+  height: 100%;
+  // min-height: 82.1vh;
+  background: url('../../assets/img/shadowbg.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.ov {
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.node {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: $h;
+    border-right: $bor4;
+    border-top: $bor4;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50%;
+    border-top: $bor4;
+    right: 0;
+    top: 0;
+  }
+
+  .node:first-of-type {
+    &::before {
+      border-top: none;
+    }
+  }
+
+  .node:last-of-type {
+    &::after {
+      border-top: none;
+    }
+  }
+
+  .txt {
+    text-align: center;
+    margin: 0 auto;
+    writing-mode: vertical-lr;
+
+    span {
+      display: inline-block;
+      padding: 2px;
+      text-align: left;
+      border: $bor;
+      box-sizing: content-box;
+      height: 110px;
+      width: auto;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &.main {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &.gs {
+    .second-level1 .txt span {
+      background: $bg1;
+      border: $bor1;
+    }
+    .three-level1 .txt span {
+      background: $bg2;
+      border: $bor2;
+    }
+    > .txt {
+      width: 100%;
+      white-space: nowrap;
+      writing-mode: horizontal-tb;
+
+      span {
+        //所有的横向的
+        height: auto;
+        width: auto;
+        background: $bg !important;
+        border: $bor;
+      }
+    }
+  }
+
+  &.hd {
+    .three-level1 .txt span {
+      //下面的单机
+      background: $bg3;
+      border: $bor3;
+    }
+    > .txt {
+      display: none;
+    }
+
+    > .btm {
+      &::before {
+        content: '';
+        display: none;
+      }
+    }
+  }
+
+  .btm {
+    &::before {
+      content: '';
+      display: block;
+      width: 50%;
+      height: $h;
+      border-right: $bor4;
+    }
+
+    .child {
+      display: grid;
+      grid-template-columns: repeat(7, auto);
+
+      .ctn {
+        height: 400px;
+
+        > .txt {
+          display: none;
+        }
+
+        &::before {
+          border-top: $bor4;
+          height: 100%;
+        }
+
+        &::after {
+          border-top: $bor4;
+        }
+      }
+    }
+  }
+}

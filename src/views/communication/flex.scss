@@ -1,0 +1,141 @@
+html {
+    font-size: 0.595vw;
+}
+
+$bor:.1rem solid #000;
+
+$h:3rem;
+
+.ma {
+    overflow: hidden;
+}
+
+.ov {
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.node {
+    position: relative;
+    overflow: hidden;
+    // flex-shrink: 0;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: $h;
+        border-right: $bor;
+        border-top: $bor;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        border-top: $bor;
+        right: 0;
+        top: 0;
+
+    }
+
+    .node {
+        &:first-of-type {
+            &::before {
+                border-top: none
+            }
+        }
+
+        &:last-of-type {
+            &::after {
+                border-top: none
+            }
+        }
+    }
+
+    .txt {
+        text-align: center;
+        writing-mode: vertical-lr;
+        margin: 0 auto;
+        overflow: hidden;
+
+        span {
+            display: inline-block;
+            text-align: left;
+            border: $bor;
+            box-sizing: content-box;
+            height: 8rem;
+            width: auto;
+            min-width: 2rem;
+            padding: .5rem;
+            margin: 0 1rem;
+            overflow: hidden;
+            align-items: flex-start;
+        }
+    }
+
+    &.main {
+        width: auto;
+
+        max-width: none;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &.gs {
+        >.txt {
+            width: 100%;
+            white-space: nowrap;
+            writing-mode: horizontal-tb;
+
+            span {
+                height: auto;
+                width: auto;
+            }
+        }
+    }
+
+
+    &.hd {
+        >.txt {
+            display: none;
+        }
+
+        >.btm {
+            &::before {
+                content: "";
+                display: none;
+            }
+        }
+    }
+
+    .btm {
+        &::before {
+            content: "";
+            display: block;
+            width: 50%;
+            height: $h;
+            border-right: $bor;
+        }
+
+        .child {
+            display: flex;
+            justify-content: center;
+
+            .ctn {
+                height: 40rem;
+                width: .1rem;
+                flex-shrink: 0;
+                display: block;
+                background-color: #000;
+            }
+        }
+    }
+}

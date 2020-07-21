@@ -1,0 +1,116 @@
+/* 常用样式*/
+.txt-one-cut {
+  white-space: nowrap; /*规定段落中的文本不进行换行*/
+  overflow: hidden; /*内容会被修剪，并且其余内容是不可见的。*/
+  text-overflow: ellipsis; /*显示省略号来代表被修剪的文本*/
+}
+.txt-two-cut {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.txt-four-cut {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.p-l5 {
+  padding-left: 5px;
+}
+.m-l5 {
+  margin-left: 5px;
+}
+.m-r5 {
+  margin-right: 5px;
+}
+.p-t20 {
+  padding-top: 20px;
+}
+.p-t15 {
+  padding-top: 15px;
+}
+.p-t18 {
+  padding-top: 18px;
+}
+.p-t22 {
+  padding-top: 22px;
+}
+/*整体布局样式*/
+html body .front_app > * {
+  min-height: 100vh;
+}
+#app {
+  width: 100%;
+  max-height: 100vh;
+  font-size: 14px;
+  overflow: hidden;
+  background: url("./assets/img/bg.png") no-repeat;
+  background-size: 100% 100%;
+  overflow-y: auto;
+}
+// .front_app {
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   flex-grow: 1000;
+// }
+
+.banner {
+  height: 220px;
+  margin: 10px 10px 10px 10px;
+}
+.flex-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1000;
+  overflow: hidden;
+  width: 62.5%;
+  margin: 0 auto;
+  background: rgba(243, 244, 245, 0.88);
+}
+// @media only screen and (max-width: 1200px){
+//   .flex-content {
+//     display: flex;
+//     flex-direction: column;
+//     flex-grow: 1000;
+//     overflow: hidden;
+//     // width: 95%;
+//     margin: 0 auto;
+//     background: rgba(243, 244, 245, 0.88);
+//   }
+// }
+.flex-c {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1000;
+  overflow: hidden;
+}
+.foot-style {
+  height: 44px;
+  background: rgba(1, 53, 103, 1);
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
